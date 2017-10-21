@@ -12,4 +12,11 @@ public class FizzBuzzShould {
         assertThat(fizzBuzz.generate(number), is(number));
     }
 
+    @Test
+    public void return_Fizz_when_number_is_multiple_of_three() throws Exception {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        MyNumber number = new MyNumber(3);
+        MyString string = new MyString("Fizz");
+        assertThat(fizzBuzz.generate(number), is(string));
+    }
 }

@@ -13,4 +13,8 @@ class MyNumber {
         }
         return false;
     }
+
+    public boolean isMultipleOf(int value) {
+        return (this.number % value) == 0;
+    }
 }
