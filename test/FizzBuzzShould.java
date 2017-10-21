@@ -25,4 +25,11 @@ public class FizzBuzzShould {
         MyString string = new MyString("Fizz");
         assertThat(fizzBuzz.generate(number), is(string));
     }
+
+    @Test
+    public void return_Buzz_when_number_is_multiple_of_five() throws Exception {
+        MyNumber number = new MyNumber(5);
+        MyString string = new MyString("Buzz");
+        assertThat(fizzBuzz.generate(number), is(string));
+    }
 }
