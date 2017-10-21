@@ -32,4 +32,12 @@ public class FizzBuzzShould {
         MyString string = new MyString("Buzz");
         assertThat(fizzBuzz.generate(number), is(string));
     }
+
+    @Test
+    public void return_FizzBuzz_when_number_is_multiple_of_three_and_five_simultaneously() throws Exception {
+        MyNumber number = new MyNumber(15);
+        MyString string = new MyString("FizzBuzz");
+        assertThat(fizzBuzz.generate(number), is(string));
+    }
+
 }
