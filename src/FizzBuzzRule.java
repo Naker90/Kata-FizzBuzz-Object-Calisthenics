@@ -1,10 +1,7 @@
 class FizzBuzzRule implements RulesInterface{
     @Override
     public boolean condition(MyNumber number) {
-        if(number.isMultipleOf(15)){
-            return true;
-        }
-        return false;
+        return number.isMultipleOf(15);
     }
 
     @Override

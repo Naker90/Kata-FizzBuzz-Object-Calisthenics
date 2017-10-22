@@ -1,10 +1,7 @@
 public class FizzRule implements RulesInterface{
     @Override
     public boolean condition(MyNumber number) {
-        if(number.isMultipleOf(3)){
-            return true;
-        }
-        return false;
+        return number.isMultipleOf(3);
     }
 
     @Override

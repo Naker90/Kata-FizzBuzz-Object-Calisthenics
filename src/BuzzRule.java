@@ -1,10 +1,7 @@
 public class BuzzRule implements RulesInterface{
     @Override
     public boolean condition(MyNumber number) {
-        if(number.isMultipleOf(5)){
-            return true;
-        }
-        return false;
+        return number.isMultipleOf(5);
     }
 
     @Override

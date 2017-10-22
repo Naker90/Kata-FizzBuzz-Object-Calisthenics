@@ -1,5 +1,4 @@
 public class FizzBuzz {
-
     private RulesEngine rulesEngine = new RulesEngine();
 
     public FizzBuzz(){
@@ -11,5 +10,4 @@ public class FizzBuzz {
     Object generate(MyNumber myNumber){
         return rulesEngine.fire(myNumber);
     }
-
 }

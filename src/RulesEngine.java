@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 class RulesEngine {
-
     private ArrayList<RulesInterface> rulesEngine = new ArrayList<>();
 
     void addRule(RulesInterface newRule){
@@ -14,8 +13,6 @@ class RulesEngine {
                 return rule.action();
             }    
         }
-        
         return number;
     }
-
 }
