@@ -1,19 +1,20 @@
 import java.util.ArrayList;
 
-public class RulesEngine {
+class RulesEngine {
 
-    ArrayList<RulesInterface> rulesEngine = new ArrayList<>();
+    private ArrayList<RulesInterface> rulesEngine = new ArrayList<>();
 
     void addRule(RulesInterface newRule){
         rulesEngine.add(newRule);
     }
 
     Object fire(MyNumber number){
-        for(int i=0; i < rulesEngine.size(); i++){
-            if(rulesEngine.get(i).condition(number)){
-                return rulesEngine.get(i).action();
-            }
+        for (RulesInterface rule : rulesEngine) {
+            if(rule.condition(number)){
+                return rule.action();
+            }    
         }
+        
         return number;
     }
 
