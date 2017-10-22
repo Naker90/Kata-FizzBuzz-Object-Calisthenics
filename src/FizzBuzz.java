@@ -1,20 +1,15 @@
 public class FizzBuzz {
 
-    private RulesInterface[] rulesEngine = new RulesInterface[3];
+    private RulesEngine rulesEngine = new RulesEngine();
 
     public FizzBuzz(){
-        rulesEngine[0] = new FizzBuzzRule();
-        rulesEngine[1] = new FizzRule();
-        rulesEngine[2] = new BuzzRule();
+        rulesEngine.addRule(new FizzBuzzRule());
+        rulesEngine.addRule(new BuzzRule());
+        rulesEngine.addRule(new FizzRule());
     }
 
-    public Object generate(MyNumber myNumber){
-        for(int i=0; i < rulesEngine.length; i++){
-            if(rulesEngine[i].condition(myNumber)){
-                return rulesEngine[i].action();
-            }
-        }
-        return myNumber;
+    Object generate(MyNumber myNumber){
+        return rulesEngine.fire(myNumber);
     }
 
 }
