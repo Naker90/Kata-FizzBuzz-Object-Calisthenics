@@ -13,8 +13,7 @@ public class FizzBuzz {
         rulesEngine.addRule(new FizzRule());
     }
 
-    Object generate(MyNumber myNumber){
-        return rulesEngine.fire(myNumber);
+    public Object generate(MyNumber myNumber){
+        return rulesEngine.executeRules(myNumber);
     }
-
 }

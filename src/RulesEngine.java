@@ -4,7 +4,7 @@ import rules.RulesInterface;
 
 import java.util.ArrayList;
 
-class RulesEngine {
+public class RulesEngine {
 
     private ArrayList<RulesInterface> rulesEngine = new ArrayList<>();
 
@@ -12,7 +12,7 @@ class RulesEngine {
         rulesEngine.add(newRule);
     }
 
-    public Object fire(MyNumber number){
+    public Object executeRules(MyNumber number){
         for (RulesInterface rule : rulesEngine) {
             MyBoolean condition = rule.condition(number);
             if(condition.equals(new MyBoolean(true))){
@@ -21,7 +21,4 @@ class RulesEngine {
         }
         return number;
     }
-
-
-
 }
