@@ -10,9 +10,6 @@ public class MyString {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof MyString){
-            return ((MyString) obj).string.equals(string);
-        }
-        return false;
+        return (obj instanceof MyString) && (((MyString) obj).string.equals(string));
     }
 }

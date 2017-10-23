@@ -10,10 +10,7 @@ public class MyBoolean {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof MyBoolean){
-            return ((MyBoolean) obj).bool == bool;
-        }
-        return false;
+        return (obj instanceof MyBoolean) && (((MyBoolean) obj).bool == bool);
     }
 }
 
