@@ -1,4 +1,4 @@
 public interface RulesInterface {
-    boolean condition(MyNumber number);
+    MyBoolean condition(MyNumber number);
     Object action();
 }
