@@ -1,8 +1,8 @@
-class MyString {
+public class MyString {
 
     private String string;
 
-    MyString(String string) {
+    public MyString(String string) {
         this.string = string;
     }
 

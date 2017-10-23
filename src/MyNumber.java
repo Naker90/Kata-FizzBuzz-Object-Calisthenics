@@ -1,8 +1,8 @@
-class MyNumber {
+public class MyNumber {
 
     private int number;
 
-    MyNumber(int number){
+    public MyNumber(int number){
         this.number = number;
     }
 
