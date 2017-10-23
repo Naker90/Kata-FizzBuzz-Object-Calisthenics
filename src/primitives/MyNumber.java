@@ -1,3 +1,5 @@
+package primitives;
+
 public class MyNumber {
 
     private int number;

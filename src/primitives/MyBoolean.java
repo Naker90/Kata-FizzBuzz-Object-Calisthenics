@@ -1,3 +1,5 @@
+package primitives;
+
 public class MyBoolean {
 
     private boolean bool;

@@ -1,3 +1,5 @@
+package primitives;
+
 public class MyString {
 
     private String string;

@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+import primitives.MyNumber;
+import primitives.MyString;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;

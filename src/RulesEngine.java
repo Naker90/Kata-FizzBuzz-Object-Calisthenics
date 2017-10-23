@@ -1,3 +1,7 @@
+import primitives.MyBoolean;
+import primitives.MyNumber;
+import rules.RulesInterface;
+
 import java.util.ArrayList;
 
 class RulesEngine {
