@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class RulesEngine {
+class RulesEngine {
 
     private ArrayList<RulesInterface> rulesEngine = new ArrayList<>();
 
