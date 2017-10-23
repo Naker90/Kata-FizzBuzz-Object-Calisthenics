@@ -14,7 +14,8 @@ class RulesEngine {
 
     public Object fire(MyNumber number){
         for (RulesInterface rule : rulesEngine) {
-            if(rule.condition(number).equals(new MyBoolean(true))){
+            MyBoolean condition = rule.condition(number);
+            if(condition.equals(new MyBoolean(true))){
                 return rule.action();
             }
         }
