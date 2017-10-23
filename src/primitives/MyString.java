@@ -9,11 +9,6 @@ public class MyString {
     }
 
     @Override
-    public String toString() {
-        return string;
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if(obj instanceof MyString){
             return ((MyString) obj).string.equals(string);
